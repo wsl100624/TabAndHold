@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8QH-Jp-FIT">
-                                <rect key="frame" x="113" y="256" width="148" height="155.5"/>
+                                <rect key="frame" x="113" y="114" width="148" height="155.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1pY-ER-Bom">
                                         <rect key="frame" x="48" y="0.0" width="52" height="107.5"/>
@@ -42,11 +42,58 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9P3-We-HZK">
+                                <rect key="frame" x="113" y="277" width="148" height="155.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysv-az-HTq">
+                                        <rect key="frame" x="48" y="0.0" width="52" height="107.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="90"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uee-EZ-uhb">
+                                        <rect key="frame" x="0.0" y="107.5" width="148" height="48"/>
+                                        <gestureRecognizers/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="30"/>
+                                        <state key="normal" title="Tap or Hold"/>
+                                        <connections>
+                                            <action selector="tapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xQq-tm-p1d"/>
+                                            <outletCollection property="gestureRecognizers" destination="u6l-qW-XHt" appends="YES" id="mlw-Ov-nzw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hk1-f5-x1F">
+                                <rect key="frame" x="161" y="440" width="52" height="155.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vpe-jD-grs">
+                                        <rect key="frame" x="0.0" y="0.0" width="52" height="107.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="90"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m3V-AV-ubf">
+                                        <rect key="frame" x="2.5" y="107.5" width="47" height="48"/>
+                                        <gestureRecognizers/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="30"/>
+                                        <state key="normal" title="Tap"/>
+                                        <connections>
+                                            <action selector="tapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qsn-9D-eTq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="8QH-Jp-FIT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1rb-Wb-kq2"/>
+                            <constraint firstItem="8QH-Jp-FIT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-141.75" id="1rb-Wb-kq2"/>
+                            <constraint firstItem="8QH-Jp-FIT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-141.75" id="1u7-Gd-QQB"/>
                             <constraint firstItem="8QH-Jp-FIT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Q6-5l-MzD"/>
+                            <constraint firstItem="9P3-We-HZK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9SU-Al-qjg"/>
+                            <constraint firstItem="hk1-f5-x1F" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="184.25" id="V58-cO-Phz"/>
+                            <constraint firstItem="8QH-Jp-FIT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qmy-CJ-pab"/>
+                            <constraint firstItem="hk1-f5-x1F" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wD5-xM-9aa"/>
+                            <constraint firstItem="9P3-We-HZK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="21.25" id="xqG-q5-uZP"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Counter" id="SIV-ag-ngk">
@@ -57,13 +104,20 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="botCounterLabel" destination="vpe-jD-grs" id="G87-6M-00k"/>
                         <outlet property="counterLabel" destination="1pY-ER-Bom" id="zR8-sT-aGW"/>
+                        <outlet property="midCounterLabel" destination="ysv-az-HTq" id="qCp-7t-sNf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.20000000000000001" id="nYH-Vm-M3X">
                     <connections>
                         <action selector="holdButton:" destination="BYZ-38-t0r" id="e7O-2R-iMn"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.20000000000000001" id="u6l-qW-XHt">
+                    <connections>
+                        <action selector="holdButton:" destination="BYZ-38-t0r" id="z6i-1k-YNL"/>
                     </connections>
                 </pongPressGestureRecognizer>
             </objects>

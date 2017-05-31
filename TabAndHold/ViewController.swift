@@ -17,6 +17,11 @@ class ViewController: UIViewController {
     }
     
     @IBOutlet weak var counterLabel: UILabel!
+    
+    @IBOutlet weak var midCounterLabel: UILabel!
+    
+    @IBOutlet weak var botCounterLabel: UILabel!
+    
     var count = 0
     
     
@@ -34,9 +39,12 @@ class ViewController: UIViewController {
         count = 0
     }
     
+    
     func increaseCount() {
         count += 1
         counterLabel.text = String(count)
+        midCounterLabel.text = String(count)
+        botCounterLabel.text = String(count)
     }
 
 
